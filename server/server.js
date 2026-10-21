@@ -36,4 +36,5 @@ app.post("/api/ask", async (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log("Server chal raha hai: http://localhost:5000"));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log("Server chal raha hai: http://localhost:" + PORT));
